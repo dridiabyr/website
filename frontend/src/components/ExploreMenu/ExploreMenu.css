@@ -1,0 +1,71 @@
+/* ExploreMenu.css */
+
+/* Explore menu container */
+.explore-menu {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.explore-menu h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Description */
+.explore-menu-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #666666;
+}
+
+/* Menu list container */
+.explore-menu-list {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Menu item */
+.explore-menu-item {
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.explore-menu-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Menu item image */
+.explore-menu-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+/* Active state for menu item image */
+.explore-menu-item img.active {
+  border-color: #ff5733;
+}
+
+/* Menu item text */
+.explore-menu-item p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+/* Active state for menu item text */
+.explore-menu-item p.active {
+  color: #ff5733;
+}

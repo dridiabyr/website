@@ -1,0 +1,66 @@
+/* Base styles */
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    animation: fadeIn 1ms;
+  }
+  
+  .food-item-img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .food-item-info {
+    padding: 20px;
+  }
+  
+  /* Hover effects */
+  .food-item:hover {
+    transform: scale(1.02); /* Scale up on hover */
+    box-shadow: 0px 5px 15px #00000030; /* Slight increase in box shadow */
+    background-color: #f9f9f9; /* Change background color on hover */
+  }
+  
+  .food-item:hover .food-item-name-rating p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add text shadow on hover */
+  }
+  
+  /* Additional styles */
+  .food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .food-item-name-rating p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .food-item-name-rating .star {
+    width: 30%;
+  }
+  
+  .food-item-img-rating {
+    width: 70px;
+  }
+  
+  .food-item-description-rating {
+    display: flex;
+    color: #676767;
+    font-size: 12px;
+  }
+  
+  .food-item-price-rating {
+    color: tomato;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0px;
+  }
+  

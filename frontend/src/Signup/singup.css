@@ -1,0 +1,96 @@
+/* signup.css */
+
+/* Container */
+.SignUp {
+    background-color: #f7fafc; /* light gray background */
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Title */
+  .SignUp h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #2d3748; /* dark gray text */
+  }
+  
+  /* Label */
+  .SignUp label {
+    display: block;
+    color: #4a5568; /* medium gray text */
+    margin-bottom: 8px;
+  }
+  
+  /* Input */
+  .SignUp .form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e0; /* light gray border */
+    border-radius: 8px;
+    margin-top: 4px;
+    font-size: 16px;
+    color: #2d3748; /* dark gray text */
+    background-color: #fff; /* white background */
+  }
+  
+  .SignUp .form-input:focus {
+    border-color: #3182ce; /* blue border on focus */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* blue shadow on focus */
+  }
+  
+  /* Select */
+  .SignUp .form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e0; /* light gray border */
+    border-radius: 8px;
+    margin-top: 4px;
+    font-size: 16px;
+    color: #2d3748; /* dark gray text */
+    background-color: #fff; /* white background */
+  }
+  
+  .SignUp .form-select:focus {
+    border-color: #3182ce; /* blue border on focus */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* blue shadow on focus */
+  }
+  
+  /* Button */
+  .SignUp button {
+    background-color: #3182ce; /* blue background */
+    color: #fff; /* white text */
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .SignUp button:hover {
+    background-color: #2b6cb0; /* darker blue on hover */
+  }
+  
+  /* Login link */
+  .SignUp p {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #4a5568; /* medium gray text */
+  }
+  
+  .SignUp .text-blue-500 {
+    color: #3182ce; /* blue text */
+    cursor: pointer;
+  }
+  
+  .SignUp .text-blue-500:hover {
+    text-decoration: underline;
+  }
+  

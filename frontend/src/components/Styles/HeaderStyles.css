@@ -1,0 +1,93 @@
+.Navigation-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Navigation-menu li {
+  margin: 0px 20px;
+}
+.Navigation-menu li a {
+  text-decoration: none;
+  color: white;
+}
+.mobile-navigation {
+  list-style: none;
+}
+.mobile-navigation li {
+  margin-top: 20px;
+}
+.mobile-navigation li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+.menu-icon {
+  color: goldenrod; /* Set default color */
+  transition: color 0.4s, transform 0.4s; /* Apply transition to color and transform */
+}
+
+.menu-icon:hover {
+  color: goldenrod; /* Change color on hover */
+  transform: translateX(5px); /* Move the icon 5 pixels to the right on hover */
+}
+
+.quick-links {
+  text-align: center;
+}
+
+.quick-links h4 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.quick-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px;
+}
+
+.quick-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.quick-links li a:hover {
+  color: #ff6600;
+}
+
+.container {
+  display: flex; /* Use Flexbox */
+  flex-direction: row; /* Stack items vertically */
+}
+.quick-links,
+.footer {
+  flex: 1; /* Each block takes up equal space */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Navigation-menu button {
+  width:100%;
+  background-color: #ff9900;
+  color: white;
+  cursor: pointer;
+}
+
+.Navigation-menu button:hover {
+  background-color: #ff6600;
+}
+
+.Navigation-menu button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}

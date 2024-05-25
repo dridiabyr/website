@@ -1,0 +1,41 @@
+/* restaurant-search.css */
+
+/* Style for the container */
+.restaurant-search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Style for the search bar */
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the list of restaurants */
+  .restaurant-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style for each restaurant item */
+  .restaurant-item {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Style for the restaurant name */
+  .restaurant-name {
+    font-weight: bold;
+  }
+  
+  /* Style for error message */
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  

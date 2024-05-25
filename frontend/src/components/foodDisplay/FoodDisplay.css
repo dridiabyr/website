@@ -1,0 +1,21 @@
+.food-display {
+    margin-top: 30px;
+  }
+  
+  .food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+  }
+  
+  .food-display-list {
+    display: flex; /* Change to flex to display items in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Add gap between items */
+    margin-top: 30px;
+  }
+  
+  /* Optionally, you can style each food item container within the list */
+  .food-display-list > * {
+    flex: 1 0 240px; /* Adjust as needed */
+  }
+  

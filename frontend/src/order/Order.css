@@ -1,0 +1,57 @@
+/* order.css */
+
+.order-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.order-page h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333333;
+}
+
+.order-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-page label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333333;
+}
+
+.order-page input,
+.order-page select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.order-page input:focus,
+.order-page select:focus {
+  outline: none;
+  border-color: #fbbf24;
+}
+
+.order-page button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fbbf24;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-page button:hover {
+  background-color: #f59e0b;
+}

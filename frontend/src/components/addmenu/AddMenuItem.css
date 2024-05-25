@@ -1,0 +1,40 @@
+.add-menu-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .add-menu-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .add-menu-container form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .add-menu-container form input[type="text"],
+  .add-menu-container form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-menu-container form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-menu-container form button:hover {
+    background-color: #0056b3;
+  }
+  

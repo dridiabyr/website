@@ -1,0 +1,45 @@
+.footer {
+    text-align: left;
+    background-color: black;
+    color: white;
+    padding: 50px;
+  }
+  
+  .footer h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer span {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .footer input[type="email"],
+  .footer button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .footer input[type="email"] {
+    width: 30%;
+  }
+  
+  .footer button {
+    width: 10%;
+    background-color: #ff9900;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .footer button:hover {
+    background-color: #ff6600;
+  }
