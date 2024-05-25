@@ -29,6 +29,7 @@ import rustic_spoon from "../assets/rustic_spoon.jpeg";
 import le_bistro_francais from "../assets/le_bistro_francais.jpeg";
 export default star_rating;
 
+
 export const food_list = [
   {
     _id: 1,

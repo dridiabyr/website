@@ -1,71 +1,60 @@
 /* ExploreMenu.css */
 
-/* Explore menu container */
 .explore-menu {
   text-align: center;
   padding: 20px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Title */
 .explore-menu h1 {
-  font-size: 2.5rem;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #333333;
+  color: #333; /* Dark text color */
 }
 
-/* Description */
 .explore-menu-text {
-  font-size: 1.2rem;
+  font-size: 16px;
+  line-height: 1.5;
   margin-bottom: 30px;
-  color: #666666;
+  color: #666; /* Medium dark text color */
 }
 
-/* Menu list container */
 .explore-menu-list {
-  display: inline-block;
-  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* Menu item */
 .explore-menu-item {
-  cursor: pointer;
   margin: 10px;
+  cursor: pointer;
   transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
 }
 
-/* Hover effect */
 .explore-menu-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Lift the item slightly on hover */
 }
 
-/* Menu item image */
 .explore-menu-item img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #ffffff;
-  transition: border-color 0.3s ease;
+  width: 150px; /* Adjust the width of the image */
+  height: 150px; /* Adjust the height of the image */
+  border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+  object-fit: cover; /* Maintain aspect ratio and cover */
 }
 
-/* Active state for menu item image */
-.explore-menu-item img.active {
-  border-color: #ff5733;
-}
-
-/* Menu item text */
 .explore-menu-item p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 0;
+  margin: 0;
+  background-color: #fff; /* White background for the text */
+  color: #333; /* Dark text color */
 }
 
-/* Active state for menu item text */
-.explore-menu-item p.active {
-  color: #ff5733;
+.explore-menu-item.active p {
+  background-color: #ff6347; /* Background color for the active item */
+  color: #fff; /* White text color for the active item */
 }

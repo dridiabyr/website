@@ -1,13 +1,18 @@
 import axios from "axios";
 import React, { useState } from "react";
+import Footer from "../components/Layout/Footer";
+import Header from "../components/Layout/Header";
 
 const SignUp = ({}) => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
     password: "",
+    confirmPassword: "",
     role: ""
   });
+  const [submitted, setSubmitted] = useState(false); // State to track submission
+  const [confirmationMessage, setConfirmationMessage] = useState(""); // State for confirmation message
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,14 +33,16 @@ const SignUp = ({}) => {
     try {
       const response = await axios.post("http://localhost:3000/api/admin/createadmin", formData);
       console.log("Sign-up successful:", response.data);
-      window.location.href = "/login";
+      setSubmitted(true); // Set submitted to true on successful submission
+      setConfirmationMessage("Sign up successful! You can now login.");
     } catch (error) {
       console.log(error);
-  
     }
   };
 
   return (
+    <div>
+      <Header/>
     <div className="SignUp bg-gray-100 p-6 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
       <form onSubmit={handleSubmit}>
@@ -130,6 +137,8 @@ const SignUp = ({}) => {
           Login
         </span>
       </p>
+    </div>
+    <Footer/>
     </div>
   );
 };
