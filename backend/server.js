@@ -24,13 +24,28 @@ const restaurantRoutes = require("./routes/restaurant.routes");
 const tableRoutes = require("./routes/table.routes");
 
 // Utilisation des routes
-app.use("/api/user",userRoutes);
-app.use("/api/admin",adminRoutes);
-app.use("/api/menu",menuRoutes);
-app.use("/api/orders",orderRoutes);
-app.use("/api/reservation",reservationRoutes);
-app.use("/api/restaurant",restaurantRoutes);
-app.use("/api/table",tableRoutes);
+app.post('/api/menus', (req, res) => {
+  const menuItem = req.body;
+  menuItems.push(menuItem);
+  console.log('Menu item added:', menuItem);
+  res.status(201).json({ message: 'Menu item added successfully', menuItem });
+});
+
+app.post("/api/contact", (req, res) => {
+  const { name, email, message } = req.body;
+
+  console.log("Form data:", { name, email, message });
+
+  res.status(200).json({ message: "Form submitted successfully!" });
+});
+
+app.use("/api/user", userRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/menu", menuRoutes);
+app.use("/api/orders", orderRoutes);
+app.use("/api/reservation", reservationRoutes);
+app.use("/api/restaurant", restaurantRoutes);
+app.use("/api/table", tableRoutes);
 
 // Démarrage du serveur
 app.listen(port, () => {

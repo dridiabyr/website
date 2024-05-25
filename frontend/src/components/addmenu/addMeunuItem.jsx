@@ -16,14 +16,16 @@ const AddMenuItem = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/menus", formData); // Await the response
+      console.log("Form data:", formData); // Log formData to check if it's correct
+      const response = await axios.post("http://localhost:3000/api/menus", formData); // Await the response
       console.log(response.data);
-      alert("menu added succefully");
+      alert("Menu added successfully");
       // You can perform further actions after adding to the database here
     } catch (error) {
       console.error("Error adding menu item:", error);
     }
   };
+  
 
   return (
     <div className="add-menu-container">
