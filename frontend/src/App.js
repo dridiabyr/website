@@ -1,18 +1,18 @@
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Home from "./Pages/Home";
 import { Routes, Route } from "react-router-dom";
-import Menu from "./Pages/Menu";
-import NtFound from "./Pages/NtFound";
 
-import Order from "./order/Order.jsx";
-import ExploreRestaurant from "./ExploreRestaurnat/ExploreRestaurant.jsx";
 import "./App.css";
-import AddMenuItem from "./addMeunuItem.jsx";
-import SignUp from "./Signup/SignUp.jsx";
-import Login from "./components/LoginPopUp/Login.jsx";
-import AdminPage from "./Admin/AdminPage.jsx";
-import ReservationForm from "./components/reservation/ReservationForm.jsx";
+import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
+import SignUp from "./Signup/SignUp";
+import Login from "./components/LoginPopUp/Login";
+import AdminPage from "./Admin/AdminPage";
+import Menu from "./Pages/Menu";
+import ReservationForm from "./components/reservation/ReservationForm";
+import ExploreRestaurant from "./ExploreRestaurnat/ExploreRestaurant";
+import Order from "./order/Order";
+import AddMenuItem from "./addMeunuItem";
+import NtFound from "./Pages/NtFound";
 
 function App() {
   return (

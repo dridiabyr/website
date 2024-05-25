@@ -8,7 +8,6 @@ import ExploreMenu from "../components/ExploreMenu/ExploreMenu";
 import FoodDisplay from "../components/foodDisplay/FoodDisplay";
 import RestaurantDisplay from "../restaurantDisplay/RestaurantDisplay";
 import "../components/Styles/HomeStyle.css"
-import RestaurantSearch from "../restaurantserach/RestaurantSearch";
 
 
 
@@ -61,7 +60,6 @@ const Home = () => {
       <div className="restaurants-container">
         <h2 className="restaurants-title">
           Discover Some of the Best Restaurants
-          <RestaurantSearch/>
         </h2>
         <div className="restaurants-grid">
           {[1, 2, 3, 4, 5, 6].map((item) => (

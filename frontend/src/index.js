@@ -12,8 +12,7 @@ root.render(
     <BrowserRouter>
       <StoreContextProvider>
         <Routes>
-        <Route path="/*" element={<App />} />
-
+          <Route path="/*" element={<App />} />
         </Routes>
       </StoreContextProvider>
     </BrowserRouter>
